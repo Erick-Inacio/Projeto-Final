@@ -29,6 +29,7 @@ namespace PContato0030282223028
                 dsCidade.Tables.Add(objCid.Listar());
                 bnCidade.DataSource = dsCidade.Tables["Cidade"];
                 bnvCidade.BindingSource = bnCidade;
+                dgvCidade.DataSource = bnCidade;
                 txtIdCidade.DataBindings.Add("TEXT", bnCidade, "id_cidade");
                 txtNomeCidade.DataBindings.Add("TEXT", bnCidade, "nome_cidade");
                 cbxUf.DataBindings.Add("SelectedItem", bnCidade, "uf_cidade");
@@ -53,7 +54,7 @@ namespace PContato0030282223028
             txtNomeCidade.Focus();
             btnSalvar.Enabled = true;
             btnAlterar.Enabled = false;
-            btnSalvar.Enabled = false;
+            btnNovo.Enabled = false;
             btnExcluir.Enabled = false;
             btnCancelar.Enabled = true;
             bInclusao = true; ;
@@ -79,7 +80,7 @@ namespace PContato0030282223028
                     Cidade R = new Cidade();
                     dsCidade.Tables.Clear();
                     dsCidade.Tables.Add(R.Listar());
-                    bnCidade.DataSource = dsCidade.Tables["TBCidade"];
+                    bnCidade.DataSource = dsCidade.Tables["Cidade"];
                 }
                 else
                 {
@@ -116,7 +117,7 @@ namespace PContato0030282223028
             else
             {
                 Cidade RegCid = new Cidade();
-                RegCid.IdCidade = Convert.ToInt16(txtIdCidade.Text);
+                
                 RegCid.NomeCidade = txtNomeCidade.Text;
                 RegCid.UfCidade = cbxUf.SelectedItem.ToString();
                 if (bInclusao)
@@ -137,7 +138,7 @@ namespace PContato0030282223028
                         // recarrega o grid
                         dsCidade.Tables.Clear();
                         dsCidade.Tables.Add(RegCid.Listar());
-                        bnCidade.DataSource = dsCidade.Tables["TBCidade"];
+                        bnCidade.DataSource = dsCidade.Tables["Cidade"];
                     }
                     else
                     {
@@ -146,6 +147,7 @@ namespace PContato0030282223028
                 }
                 else
                 {
+                    RegCid.IdCidade = Convert.ToInt16(txtIdCidade.Text);
                     if (RegCid.Alterar() > 0)
                     {
                         MessageBox.Show("Cidade alterada com sucesso!");
@@ -159,6 +161,10 @@ namespace PContato0030282223028
                         btnAlterar.Enabled = true;
                         btnExcluir.Enabled = true;
                         btnCancelar.Enabled = false;
+
+                        dsCidade.Tables.Clear();
+                        dsCidade.Tables.Add(RegCid.Listar());
+                        bnCidade.DataSource = dsCidade.Tables["Cidade"];
                     }
                     else
                     {

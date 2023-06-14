@@ -92,7 +92,7 @@ namespace PContato0030282223028
             try
             {
                 SqlCommand mycommand;
-                mycommand = new SqlCommand("DELETE FROM TBCIDADE WHERE id_cidade = @id_cidade",
+                mycommand = new SqlCommand("DELETE FROM CIDADE WHERE id_cidade = @id_cidade",
                 frmPrincipal.conexao);
 
                 mycommand.Parameters.Add(new SqlParameter("@id_cidade",
