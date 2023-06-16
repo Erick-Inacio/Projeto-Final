@@ -46,18 +46,38 @@ namespace PContato0030282223028
 
         private void cidadeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmCidade objCidade = new frmCidade();
-            objCidade.MdiParent = this;
-            objCidade.WindowState = FormWindowState.Maximized;
-            objCidade.Show();
+            AbrirFormulario<frmCidade>("frmCidade");
+
+            //frmCidade objCidade = new frmCidade();
+            //objCidade.MdiParent = this;
+            //objCidade.WindowState = FormWindowState.Maximized;
+            //objCidade.Show();
         }
 
         private void contatoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmContato objContato = new frmContato();
-            objContato.MdiParent = this;
-            objContato.WindowState = FormWindowState.Maximized;
-            objContato.Show();
+            AbrirFormulario<frmContato>("frmContato");
+
+            //frmContato objContato = new frmContato();
+            //objContato.MdiParent = this;
+            //objContato.WindowState = FormWindowState.Maximized;
+            //objContato.Show();
+        }
+
+        private void AbrirFormulario<T>(string formularioName) where T : Form, new()
+        {
+            var formulario = Application.OpenForms.OfType<T>().FirstOrDefault();
+            if (formulario != null)
+            {
+                formulario.BringToFront();
+            }
+            else
+            {
+                formulario = new T();
+                formulario.MdiParent = this;
+                formulario.WindowState = FormWindowState.Maximized;
+                formulario.Show();
+            }
         }
     }
 }

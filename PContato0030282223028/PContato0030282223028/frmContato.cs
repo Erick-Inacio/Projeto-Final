@@ -21,5 +21,10 @@ namespace PContato0030282223028
         {
 
         }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

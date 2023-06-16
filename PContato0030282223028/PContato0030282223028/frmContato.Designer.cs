@@ -50,17 +50,17 @@
             this.btnExcluir = new System.Windows.Forms.ToolStripButton();
             this.btnCancelar = new System.Windows.Forms.ToolStripButton();
             this.btnSair = new System.Windows.Forms.ToolStripButton();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpData = new System.Windows.Forms.DateTimePicker();
             this.lblCidade = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblData = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCelular = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtEndereco = new System.Windows.Forms.TextBox();
             this.lblEndereco = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.cbxCidade = new System.Windows.Forms.ComboBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
             this.lblCelular = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
             this.lblId = new System.Windows.Forms.Label();
@@ -103,17 +103,17 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.dateTimePicker1);
+            this.tabPage2.Controls.Add(this.dtpData);
             this.tabPage2.Controls.Add(this.lblCidade);
-            this.tabPage2.Controls.Add(this.textBox3);
+            this.tabPage2.Controls.Add(this.txtEmail);
             this.tabPage2.Controls.Add(this.lblData);
-            this.tabPage2.Controls.Add(this.textBox2);
+            this.tabPage2.Controls.Add(this.txtCelular);
             this.tabPage2.Controls.Add(this.lblEmail);
-            this.tabPage2.Controls.Add(this.textBox1);
+            this.tabPage2.Controls.Add(this.txtEndereco);
             this.tabPage2.Controls.Add(this.lblEndereco);
-            this.tabPage2.Controls.Add(this.comboBox1);
-            this.tabPage2.Controls.Add(this.textBox4);
-            this.tabPage2.Controls.Add(this.textBox5);
+            this.tabPage2.Controls.Add(this.cbxCidade);
+            this.tabPage2.Controls.Add(this.txtNome);
+            this.tabPage2.Controls.Add(this.txtId);
             this.tabPage2.Controls.Add(this.lblCelular);
             this.tabPage2.Controls.Add(this.lblNome);
             this.tabPage2.Controls.Add(this.lblId);
@@ -124,6 +124,7 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Detalhes";
             this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // bnvCidade
             // 
@@ -280,14 +281,14 @@
             this.btnSair.Size = new System.Drawing.Size(23, 22);
             this.btnSair.Text = "Sair";
             // 
-            // dateTimePicker1
+            // dtpData
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(95, 319);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(100, 20);
-            this.dateTimePicker1.TabIndex = 27;
-            this.dateTimePicker1.Value = new System.DateTime(2023, 6, 15, 0, 0, 0, 0);
+            this.dtpData.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpData.Location = new System.Drawing.Point(95, 319);
+            this.dtpData.Name = "dtpData";
+            this.dtpData.Size = new System.Drawing.Size(100, 20);
+            this.dtpData.TabIndex = 27;
+            this.dtpData.Value = new System.DateTime(2023, 6, 15, 0, 0, 0, 0);
             // 
             // lblCidade
             // 
@@ -298,14 +299,14 @@
             this.lblCidade.TabIndex = 26;
             this.lblCidade.Text = "Cidade:";
             // 
-            // textBox3
+            // txtEmail
             // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(95, 270);
-            this.textBox3.MaxLength = 50;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(276, 20);
-            this.textBox3.TabIndex = 25;
+            this.txtEmail.Enabled = false;
+            this.txtEmail.Location = new System.Drawing.Point(95, 270);
+            this.txtEmail.MaxLength = 50;
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(276, 20);
+            this.txtEmail.TabIndex = 25;
             // 
             // lblData
             // 
@@ -316,14 +317,14 @@
             this.lblData.TabIndex = 24;
             this.lblData.Text = "Data:";
             // 
-            // textBox2
+            // txtCelular
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(95, 221);
-            this.textBox2.MaxLength = 50;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(276, 20);
-            this.textBox2.TabIndex = 23;
+            this.txtCelular.Enabled = false;
+            this.txtCelular.Location = new System.Drawing.Point(95, 221);
+            this.txtCelular.MaxLength = 50;
+            this.txtCelular.Name = "txtCelular";
+            this.txtCelular.Size = new System.Drawing.Size(276, 20);
+            this.txtCelular.TabIndex = 23;
             // 
             // lblEmail
             // 
@@ -334,14 +335,14 @@
             this.lblEmail.TabIndex = 22;
             this.lblEmail.Text = "Email:";
             // 
-            // textBox1
+            // txtEndereco
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(95, 122);
-            this.textBox1.MaxLength = 50;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(276, 20);
-            this.textBox1.TabIndex = 21;
+            this.txtEndereco.Enabled = false;
+            this.txtEndereco.Location = new System.Drawing.Point(95, 122);
+            this.txtEndereco.MaxLength = 50;
+            this.txtEndereco.Name = "txtEndereco";
+            this.txtEndereco.Size = new System.Drawing.Size(276, 20);
+            this.txtEndereco.TabIndex = 21;
             // 
             // lblEndereco
             // 
@@ -352,12 +353,12 @@
             this.lblEndereco.TabIndex = 20;
             this.lblEndereco.Text = "Endereço:";
             // 
-            // comboBox1
+            // cbxCidade
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Enabled = false;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbxCidade.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxCidade.Enabled = false;
+            this.cbxCidade.FormattingEnabled = true;
+            this.cbxCidade.Items.AddRange(new object[] {
             "AC",
             "AL",
             "AP",
@@ -385,27 +386,27 @@
             "SP",
             "SE",
             "TO"});
-            this.comboBox1.Location = new System.Drawing.Point(95, 171);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(276, 21);
-            this.comboBox1.TabIndex = 19;
+            this.cbxCidade.Location = new System.Drawing.Point(95, 171);
+            this.cbxCidade.Name = "cbxCidade";
+            this.cbxCidade.Size = new System.Drawing.Size(276, 21);
+            this.cbxCidade.TabIndex = 19;
             // 
-            // textBox4
+            // txtNome
             // 
-            this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(95, 73);
-            this.textBox4.MaxLength = 50;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(276, 20);
-            this.textBox4.TabIndex = 18;
+            this.txtNome.Enabled = false;
+            this.txtNome.Location = new System.Drawing.Point(95, 73);
+            this.txtNome.MaxLength = 50;
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(276, 20);
+            this.txtNome.TabIndex = 18;
             // 
-            // textBox5
+            // txtId
             // 
-            this.textBox5.Enabled = false;
-            this.textBox5.Location = new System.Drawing.Point(95, 24);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 17;
+            this.txtId.Enabled = false;
+            this.txtId.Location = new System.Drawing.Point(95, 24);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(100, 20);
+            this.txtId.TabIndex = 17;
             // 
             // lblCelular
             // 
@@ -478,17 +479,17 @@
         private System.Windows.Forms.ToolStripButton btnExcluir;
         private System.Windows.Forms.ToolStripButton btnCancelar;
         private System.Windows.Forms.ToolStripButton btnSair;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpData;
         private System.Windows.Forms.Label lblCidade;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label lblData;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCelular;
         private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtEndereco;
         private System.Windows.Forms.Label lblEndereco;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.ComboBox cbxCidade;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label lblCelular;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Label lblId;
