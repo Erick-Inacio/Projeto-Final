@@ -60,6 +60,12 @@
     <Compile Include="frmCidade.Designer.cs">
       <DependentUpon>frmCidade.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmContato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmContato.Designer.cs">
+      <DependentUpon>frmContato.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -67,6 +73,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCidade.resx">
       <DependentUpon>frmCidade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmContato.resx">
+      <DependentUpon>frmContato.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

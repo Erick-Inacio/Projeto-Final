@@ -1,6 +1,6 @@
 ﻿namespace PContato0030282223028
 {
-    partial class frmCidade
+    partial class frmContato
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCidade));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmContato));
+            this.tbCidade = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.dgvCidade = new System.Windows.Forms.DataGridView();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.bnvCidade = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -46,25 +50,80 @@
             this.btnExcluir = new System.Windows.Forms.ToolStripButton();
             this.btnCancelar = new System.Windows.Forms.ToolStripButton();
             this.btnSair = new System.Windows.Forms.ToolStripButton();
-            this.tbCidade = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.dgvCidade = new System.Windows.Forms.DataGridView();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.cbxUf = new System.Windows.Forms.ComboBox();
-            this.txtNomeCidade = new System.Windows.Forms.TextBox();
-            this.txtIdCidade = new System.Windows.Forms.TextBox();
-            this.lblUf = new System.Windows.Forms.Label();
-            this.lblNomeCidade = new System.Windows.Forms.Label();
-            this.lblIdCidade = new System.Windows.Forms.Label();
-            this.gbxCidade = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.bnvCidade)).BeginInit();
-            this.bnvCidade.SuspendLayout();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.lblCidade = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.lblData = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblEndereco = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.lblCelular = new System.Windows.Forms.Label();
+            this.lblNome = new System.Windows.Forms.Label();
+            this.lblId = new System.Windows.Forms.Label();
             this.tbCidade.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCidade)).BeginInit();
             this.tabPage2.SuspendLayout();
-            this.gbxCidade.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bnvCidade)).BeginInit();
+            this.bnvCidade.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // tbCidade
+            // 
+            this.tbCidade.Controls.Add(this.tabPage1);
+            this.tbCidade.Controls.Add(this.tabPage2);
+            this.tbCidade.Location = new System.Drawing.Point(0, 27);
+            this.tbCidade.Name = "tbCidade";
+            this.tbCidade.SelectedIndex = 0;
+            this.tbCidade.Size = new System.Drawing.Size(800, 425);
+            this.tbCidade.TabIndex = 3;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.dgvCidade);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(792, 399);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Dados";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // dgvCidade
+            // 
+            this.dgvCidade.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCidade.Location = new System.Drawing.Point(8, 6);
+            this.dgvCidade.Name = "dgvCidade";
+            this.dgvCidade.Size = new System.Drawing.Size(776, 382);
+            this.dgvCidade.TabIndex = 0;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.dateTimePicker1);
+            this.tabPage2.Controls.Add(this.lblCidade);
+            this.tabPage2.Controls.Add(this.textBox3);
+            this.tabPage2.Controls.Add(this.lblData);
+            this.tabPage2.Controls.Add(this.textBox2);
+            this.tabPage2.Controls.Add(this.lblEmail);
+            this.tabPage2.Controls.Add(this.textBox1);
+            this.tabPage2.Controls.Add(this.lblEndereco);
+            this.tabPage2.Controls.Add(this.comboBox1);
+            this.tabPage2.Controls.Add(this.textBox4);
+            this.tabPage2.Controls.Add(this.textBox5);
+            this.tabPage2.Controls.Add(this.lblCelular);
+            this.tabPage2.Controls.Add(this.lblNome);
+            this.tabPage2.Controls.Add(this.lblId);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(792, 399);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Detalhes";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // bnvCidade
             // 
@@ -95,7 +154,7 @@
             this.bnvCidade.Name = "bnvCidade";
             this.bnvCidade.PositionItem = this.bindingNavigatorPositionItem;
             this.bnvCidade.Size = new System.Drawing.Size(800, 25);
-            this.bnvCidade.TabIndex = 0;
+            this.bnvCidade.TabIndex = 2;
             this.bnvCidade.Text = "bindingNavigator1";
             // 
             // bindingNavigatorCountItem
@@ -174,7 +233,6 @@
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(23, 22);
             this.btnNovo.Text = "Novo";
-            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // btnSalvar
             // 
@@ -194,7 +252,6 @@
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(23, 22);
             this.btnAlterar.Text = "Alterar";
-            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // btnExcluir
             // 
@@ -204,7 +261,6 @@
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(23, 22);
             this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnCancelar
             // 
@@ -214,7 +270,6 @@
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(23, 22);
             this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnSair
             // 
@@ -224,56 +279,85 @@
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(23, 22);
             this.btnSair.Text = "Sair";
-            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
-            // tbCidade
+            // dateTimePicker1
             // 
-            this.tbCidade.Controls.Add(this.tabPage1);
-            this.tbCidade.Controls.Add(this.tabPage2);
-            this.tbCidade.Location = new System.Drawing.Point(0, 28);
-            this.tbCidade.Name = "tbCidade";
-            this.tbCidade.SelectedIndex = 0;
-            this.tbCidade.Size = new System.Drawing.Size(800, 425);
-            this.tbCidade.TabIndex = 1;
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(95, 319);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(100, 20);
+            this.dateTimePicker1.TabIndex = 27;
+            this.dateTimePicker1.Value = new System.DateTime(2023, 6, 15, 0, 0, 0, 0);
             // 
-            // tabPage1
+            // lblCidade
             // 
-            this.tabPage1.Controls.Add(this.dgvCidade);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(792, 399);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Dados";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.lblCidade.AutoSize = true;
+            this.lblCidade.Location = new System.Drawing.Point(23, 174);
+            this.lblCidade.Name = "lblCidade";
+            this.lblCidade.Size = new System.Drawing.Size(43, 13);
+            this.lblCidade.TabIndex = 26;
+            this.lblCidade.Text = "Cidade:";
             // 
-            // dgvCidade
+            // textBox3
             // 
-            this.dgvCidade.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCidade.Location = new System.Drawing.Point(8, 6);
-            this.dgvCidade.Name = "dgvCidade";
-            this.dgvCidade.Size = new System.Drawing.Size(776, 382);
-            this.dgvCidade.TabIndex = 0;
-            this.dgvCidade.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCidade_CellContentClick);
+            this.textBox3.Enabled = false;
+            this.textBox3.Location = new System.Drawing.Point(95, 270);
+            this.textBox3.MaxLength = 50;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(276, 20);
+            this.textBox3.TabIndex = 25;
             // 
-            // tabPage2
+            // lblData
             // 
-            this.tabPage2.Controls.Add(this.gbxCidade);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(792, 399);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Detalhes";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
+            this.lblData.AutoSize = true;
+            this.lblData.Location = new System.Drawing.Point(23, 321);
+            this.lblData.Name = "lblData";
+            this.lblData.Size = new System.Drawing.Size(33, 13);
+            this.lblData.TabIndex = 24;
+            this.lblData.Text = "Data:";
             // 
-            // cbxUf
+            // textBox2
             // 
-            this.cbxUf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxUf.Enabled = false;
-            this.cbxUf.FormattingEnabled = true;
-            this.cbxUf.Items.AddRange(new object[] {
+            this.textBox2.Enabled = false;
+            this.textBox2.Location = new System.Drawing.Point(95, 221);
+            this.textBox2.MaxLength = 50;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(276, 20);
+            this.textBox2.TabIndex = 23;
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(23, 272);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(35, 13);
+            this.lblEmail.TabIndex = 22;
+            this.lblEmail.Text = "Email:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(95, 122);
+            this.textBox1.MaxLength = 50;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(276, 20);
+            this.textBox1.TabIndex = 21;
+            // 
+            // lblEndereco
+            // 
+            this.lblEndereco.AutoSize = true;
+            this.lblEndereco.Location = new System.Drawing.Point(23, 125);
+            this.lblEndereco.Name = "lblEndereco";
+            this.lblEndereco.Size = new System.Drawing.Size(56, 13);
+            this.lblEndereco.TabIndex = 20;
+            this.lblEndereco.Text = "Endereço:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Enabled = false;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
             "AC",
             "AL",
             "AP",
@@ -301,89 +385,72 @@
             "SP",
             "SE",
             "TO"});
-            this.cbxUf.Location = new System.Drawing.Point(112, 148);
-            this.cbxUf.Name = "cbxUf";
-            this.cbxUf.Size = new System.Drawing.Size(121, 21);
-            this.cbxUf.TabIndex = 11;
+            this.comboBox1.Location = new System.Drawing.Point(95, 171);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(276, 21);
+            this.comboBox1.TabIndex = 19;
             // 
-            // txtNomeCidade
+            // textBox4
             // 
-            this.txtNomeCidade.Enabled = false;
-            this.txtNomeCidade.Location = new System.Drawing.Point(112, 87);
-            this.txtNomeCidade.MaxLength = 50;
-            this.txtNomeCidade.Name = "txtNomeCidade";
-            this.txtNomeCidade.Size = new System.Drawing.Size(276, 20);
-            this.txtNomeCidade.TabIndex = 10;
+            this.textBox4.Enabled = false;
+            this.textBox4.Location = new System.Drawing.Point(95, 73);
+            this.textBox4.MaxLength = 50;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(276, 20);
+            this.textBox4.TabIndex = 18;
             // 
-            // txtIdCidade
+            // textBox5
             // 
-            this.txtIdCidade.Enabled = false;
-            this.txtIdCidade.Location = new System.Drawing.Point(112, 30);
-            this.txtIdCidade.Name = "txtIdCidade";
-            this.txtIdCidade.Size = new System.Drawing.Size(100, 20);
-            this.txtIdCidade.TabIndex = 9;
+            this.textBox5.Enabled = false;
+            this.textBox5.Location = new System.Drawing.Point(95, 24);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 17;
             // 
-            // lblUf
+            // lblCelular
             // 
-            this.lblUf.AutoSize = true;
-            this.lblUf.Location = new System.Drawing.Point(6, 148);
-            this.lblUf.Name = "lblUf";
-            this.lblUf.Size = new System.Drawing.Size(24, 13);
-            this.lblUf.TabIndex = 8;
-            this.lblUf.Text = "UF:";
+            this.lblCelular.AutoSize = true;
+            this.lblCelular.Location = new System.Drawing.Point(23, 223);
+            this.lblCelular.Name = "lblCelular";
+            this.lblCelular.Size = new System.Drawing.Size(42, 13);
+            this.lblCelular.TabIndex = 16;
+            this.lblCelular.Text = "Celular:";
             // 
-            // lblNomeCidade
+            // lblNome
             // 
-            this.lblNomeCidade.AutoSize = true;
-            this.lblNomeCidade.Location = new System.Drawing.Point(6, 89);
-            this.lblNomeCidade.Name = "lblNomeCidade";
-            this.lblNomeCidade.Size = new System.Drawing.Size(74, 13);
-            this.lblNomeCidade.TabIndex = 7;
-            this.lblNomeCidade.Text = "Nome Cidade:";
+            this.lblNome.AutoSize = true;
+            this.lblNome.Location = new System.Drawing.Point(23, 76);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(38, 13);
+            this.lblNome.TabIndex = 15;
+            this.lblNome.Text = "Nome:";
             // 
-            // lblIdCidade
+            // lblId
             // 
-            this.lblIdCidade.AutoSize = true;
-            this.lblIdCidade.Location = new System.Drawing.Point(6, 30);
-            this.lblIdCidade.Name = "lblIdCidade";
-            this.lblIdCidade.Size = new System.Drawing.Size(55, 13);
-            this.lblIdCidade.TabIndex = 6;
-            this.lblIdCidade.Text = "Id Cidade:";
+            this.lblId.AutoSize = true;
+            this.lblId.Location = new System.Drawing.Point(23, 27);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(21, 13);
+            this.lblId.TabIndex = 14;
+            this.lblId.Text = "ID:";
             // 
-            // gbxCidade
-            // 
-            this.gbxCidade.Controls.Add(this.cbxUf);
-            this.gbxCidade.Controls.Add(this.lblIdCidade);
-            this.gbxCidade.Controls.Add(this.txtNomeCidade);
-            this.gbxCidade.Controls.Add(this.lblNomeCidade);
-            this.gbxCidade.Controls.Add(this.txtIdCidade);
-            this.gbxCidade.Controls.Add(this.lblUf);
-            this.gbxCidade.Location = new System.Drawing.Point(192, 100);
-            this.gbxCidade.Name = "gbxCidade";
-            this.gbxCidade.Size = new System.Drawing.Size(400, 179);
-            this.gbxCidade.TabIndex = 12;
-            this.gbxCidade.TabStop = false;
-            this.gbxCidade.Text = "Cidade";
-            // 
-            // frmCidade
+            // frmContato
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tbCidade);
             this.Controls.Add(this.bnvCidade);
-            this.Name = "frmCidade";
-            this.Text = "frmCidade";
-            this.Load += new System.EventHandler(this.frmCidade_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.bnvCidade)).EndInit();
-            this.bnvCidade.ResumeLayout(false);
-            this.bnvCidade.PerformLayout();
+            this.Name = "frmContato";
+            this.Text = "frmContato";
             this.tbCidade.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCidade)).EndInit();
             this.tabPage2.ResumeLayout(false);
-            this.gbxCidade.ResumeLayout(false);
-            this.gbxCidade.PerformLayout();
+            this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bnvCidade)).EndInit();
+            this.bnvCidade.ResumeLayout(false);
+            this.bnvCidade.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -391,6 +458,10 @@
 
         #endregion
 
+        private System.Windows.Forms.TabControl tbCidade;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.DataGridView dgvCidade;
+        private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.BindingNavigator bnvCidade;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
@@ -401,22 +472,25 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.TabControl tbCidade;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.DataGridView dgvCidade;
         private System.Windows.Forms.ToolStripButton btnNovo;
         private System.Windows.Forms.ToolStripButton btnSalvar;
         private System.Windows.Forms.ToolStripButton btnAlterar;
         private System.Windows.Forms.ToolStripButton btnExcluir;
         private System.Windows.Forms.ToolStripButton btnCancelar;
         private System.Windows.Forms.ToolStripButton btnSair;
-        private System.Windows.Forms.GroupBox gbxCidade;
-        private System.Windows.Forms.ComboBox cbxUf;
-        private System.Windows.Forms.Label lblIdCidade;
-        private System.Windows.Forms.TextBox txtNomeCidade;
-        private System.Windows.Forms.Label lblNomeCidade;
-        private System.Windows.Forms.TextBox txtIdCidade;
-        private System.Windows.Forms.Label lblUf;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label lblCidade;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label lblData;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblEndereco;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label lblCelular;
+        private System.Windows.Forms.Label lblNome;
+        private System.Windows.Forms.Label lblId;
     }
 }

@@ -194,5 +194,10 @@ namespace PContato0030282223028
         {
 
         }
+
+        private void dgvCidade_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

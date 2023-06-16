@@ -51,5 +51,13 @@ namespace PContato0030282223028
             objCidade.WindowState = FormWindowState.Maximized;
             objCidade.Show();
         }
+
+        private void contatoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmContato objContato = new frmContato();
+            objContato.MdiParent = this;
+            objContato.WindowState = FormWindowState.Maximized;
+            objContato.Show();
+        }
     }
 }
