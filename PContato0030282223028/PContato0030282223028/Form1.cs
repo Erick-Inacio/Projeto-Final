@@ -26,7 +26,7 @@ namespace PContato0030282223028
         {
             try
             {
-                conexao = new SqlConnection("Data Source=Erick\\SQLExpress;Initial Catalog=LP2;Integrated Security=True");
+                conexao = new SqlConnection("Data Source=PCorra\\SQLExpress;Initial Catalog=LP2;Integrated Security=True;Pooling=False");
                 conexao.Open();
             }
             catch(SqlException ex)
