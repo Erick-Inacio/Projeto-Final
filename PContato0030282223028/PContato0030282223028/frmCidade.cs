@@ -129,6 +129,7 @@ namespace PContato0030282223028
                         txtIdCidade.Enabled = false;
                         txtNomeCidade.Enabled = false;
                         cbxUf.Enabled = false;
+                        btnNovo.Enabled = true;
                         btnSalvar.Enabled = false;
                         btnAlterar.Enabled = true;
                         btnAlterar.Enabled = true;
@@ -156,8 +157,8 @@ namespace PContato0030282223028
                         txtIdCidade.Enabled = false;
                         txtNomeCidade.Enabled = false;
                         cbxUf.Enabled = false;
+                        btnNovo.Enabled = false;
                         btnSalvar.Enabled = false;
-                        btnAlterar.Enabled = true;
                         btnAlterar.Enabled = true;
                         btnExcluir.Enabled = true;
                         btnCancelar.Enabled = false;

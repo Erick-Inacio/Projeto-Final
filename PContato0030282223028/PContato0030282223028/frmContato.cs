@@ -81,7 +81,7 @@ namespace PContato0030282223028
                         txtEmail.Enabled = false;
                         dtpData.Enabled=false;
                         btnSalvar.Enabled = false;
-                        btnAlterar.Enabled = true;
+                        btnNovo.Enabled = true;
                         btnAlterar.Enabled = true;
                         btnExcluir.Enabled = true;
                         btnCancelar.Enabled = false;
@@ -111,7 +111,8 @@ namespace PContato0030282223028
                         txtEmail.Enabled = false;
                         cbxCidade.Enabled = true;
                         dtpData.Enabled=false;
-                        btnSalvar.Enabled = false;
+                        btnNovo.Enabled=true;
+                        btnSalvar.Enabled = true;
                         btnAlterar.Enabled = true;
                         btnAlterar.Enabled = true;
                         btnExcluir.Enabled = true;
@@ -217,6 +218,16 @@ namespace PContato0030282223028
         }
 
         private void btnSair_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbxCidade_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bnvContato_RefreshItems(object sender, EventArgs e)
         {
 
         }

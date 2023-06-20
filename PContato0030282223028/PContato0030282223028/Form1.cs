@@ -26,7 +26,7 @@ namespace PContato0030282223028
         {
             try
             {
-                conexao = new SqlConnection("Data Source=PCorra\\SQLExpress;Initial Catalog=LP2;Integrated Security=True;Pooling=False");
+                conexao = new SqlConnection("Data Source=erick\\sqlexpress;Initial Catalog=erick\\lp2;Integrated Security=True;Pooling=False");
                 conexao.Open();
             }
             catch(SqlException ex)
@@ -47,21 +47,11 @@ namespace PContato0030282223028
         private void cidadeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AbrirFormulario<frmCidade>("frmCidade");
-
-            //frmCidade objCidade = new frmCidade();
-            //objCidade.MdiParent = this;
-            //objCidade.WindowState = FormWindowState.Maximized;
-            //objCidade.Show();
         }
 
         private void contatoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AbrirFormulario<frmContato>("frmContato");
-
-            //frmContato objContato = new frmContato();
-            //objContato.MdiParent = this;
-            //objContato.WindowState = FormWindowState.Maximized;
-            //objContato.Show();
         }
 
         private void AbrirFormulario<T>(string formularioName) where T : Form, new()
