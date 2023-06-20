@@ -105,7 +105,6 @@
             this.dgvContato.RowHeadersWidth = 51;
             this.dgvContato.Size = new System.Drawing.Size(1035, 470);
             this.dgvContato.TabIndex = 0;
-            this.dgvContato.ReadOnlyChanged += new System.EventHandler(this.tr);
             // 
             // tabPage2
             // 
@@ -131,7 +130,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Detalhes";
             this.tabPage2.UseVisualStyleBackColor = true;
-            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // dtpData
             // 
@@ -410,6 +408,7 @@
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(29, 24);
             this.btnNovo.Text = "Novo";
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // btnSalvar
             // 
@@ -429,6 +428,7 @@
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(29, 24);
             this.btnAlterar.Text = "Alterar";
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // btnExcluir
             // 
@@ -438,6 +438,7 @@
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(29, 24);
             this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnCancelar
             // 
@@ -447,6 +448,7 @@
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(29, 24);
             this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnSair
             // 
@@ -456,6 +458,7 @@
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(29, 24);
             this.btnSair.Text = "Sair";
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // frmContato
             // 
